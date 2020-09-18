@@ -28,8 +28,19 @@ Crea una funcion llamada: challenge1  que realice lo siguiente:
     v) Agregar el elmento como hijo del div "dummy". 
 
 **/
-
+window.addEventListener("click", challenge1);
 // CREA TU FUNCION challenge1 aqui 
+
+function challenge1() {
+  var howManyNums = prompt("How many names do you want");
+
+  for (let i = 0; i < howManyNums; i++) {
+    let boton = document.CreateElement("button");
+    boton.innerHTML =  nombres[i];
+
+}
+}
+
 
 
 
@@ -42,10 +53,36 @@ Crea una funcion llamada: challenge2 que utilizando un FOR convierta todos los n
 
 // CREA TU FUNCION challenge2 2 aquí.
 
+window.addEventListener("click", challenge2);
+
+function challenge2() {
+
+  for (let i = 0; i < nombres.length; i++) {
+    console.log(nombres[i]);
+}
+}
+
+
+window.addEventListener("click", challenge3);
+
+function challenge3() {
+    function Dog(nombre, color, raza){
+    this.nombre = nombre;
+    this.color = color;
+    this.raza = raza;
+    }
+var pug = new Dog("Emmi", "Beige", "4");
+var schnauzer = new Dog("hit", "gris", "2");
+var poodle = new Dog("boby", "verde", "5");
+}
+
 
 
 // ************** PARTE 3    **************
 
+var pug = new Dog("Emmi", "Beige", "4");
+var schnauzer = new Dog("hit", "gris", "2");
+var poodle = new Dog("boby", "verde", "5");
 /**
 
 A) Escribe un constructor que te permita generar objetos de tipo "Dog" que reciba 3 parametros
@@ -53,6 +90,8 @@ A) Escribe un constructor que te permita generar objetos de tipo "Dog" que recib
 1) Nombre
 2) Color
 3) Raza
+
+
 
 
 B) Utilizando el constructor crea 3 objectos con diferentes valores y escribe en consola cada objeto.
